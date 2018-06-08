@@ -25,12 +25,13 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <limits.h>
 
 #ifndef __GNUC__
 #  define __attribute__(x)
 #endif
 
-#if RAND_MAX == SHORT_MAX
+#if RAND_MAX == SHRT_MAX
   typedef unsigned short rand__t;
 #else
   typedef unsigned int   rand__t;
