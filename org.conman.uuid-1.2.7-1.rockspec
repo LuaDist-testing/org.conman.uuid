@@ -1,11 +1,19 @@
-package = "org.conman.uuid"
-version = "1.2.5-1"
+-- This file was automatically generated for the LuaDist project.
 
-source =
-{
-  url = "git://github.com/spc476/SPCUUID.git",
-  tag = "1.2.5"
+package = "org.conman.uuid"
+version = "1.2.7-1"
+
+-- LuaDist source
+source = {
+  tag = "1.2.7-1",
+  url = "git://github.com/LuaDist-testing/org.conman.uuid.git"
 }
+-- Original source
+-- source =
+-- {
+--   url = "git://github.com/spc476/SPCUUID.git",
+--   tag = "1.2.7"
+-- }
 
 supported_platforms = { "unix" }
 
@@ -24,7 +32,7 @@ description =
 
 dependencies = 
 {
-  "lua >= 5.1, < 5.3"
+  "lua >= 5.1, < 5.4"
 }
 
 build =
@@ -35,13 +43,14 @@ build =
 
   build_variables =
   {
-    CC         = "$(CC) -std=c99",
+    CC         = "c99",
     CFLAGS     = "$(CFLAGS)",
-    LUA_INCDIR = "$(LUA_INCDIR)"
+    LUA_INCDIR = "$(LUA_INCDIR)",
+    LUA        = "$(LUA)"
   },
 
   install_variables =
   {
-    LUALIB = "$(LIBDIR)"
+    LIBDIR = "$(LIBDIR)"
   },
 }
