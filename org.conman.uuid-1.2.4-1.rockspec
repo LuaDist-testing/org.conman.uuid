@@ -1,18 +1,18 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "org.conman.uuid"
-version = "1.2.2-1"
+version = "1.2.4-1"
 
 -- LuaDist source
 source = {
-  tag = "1.2.2-1",
+  tag = "1.2.4-1",
   url = "git://github.com/LuaDist-testing/org.conman.uuid.git"
 }
 -- Original source
 -- source =
 -- {
 --   url = "git://github.com/spc476/SPCUUID.git",
---   tag = "1.2.2"
+--   tag = "1.2.4"
 -- }
 
 supported_platforms = { "unix" }
